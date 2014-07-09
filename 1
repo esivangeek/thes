@@ -1,0 +1,8 @@
+		System.out.println("hi");
+		
+		int dimension=Integer.parseInt(args[1]);
+		
+				
+		myLatentSemanticAnalysis myLSA=new myLatentSemanticAnalysis(dimension-3);
+		myLSA.initialize(dimension+1);	
+		myLSA.printSimilarsToFile(args[0],Double.parseDouble(args[2]),args[0]+" "+args[1]+" "+args[2]);
